@@ -51,10 +51,22 @@ inputLeft.addEventListener("mouseover", () => {
   infoball.textContent = "Insérez une valeur";
 });
 
+inputLeft.addEventListener("mouseleave", () => {
+    infoball.textContent = "";
+  });
+
 inputRight.addEventListener("mouseover", () => {
     infoball.textContent = "Insérez une valeur";
   });
 
+  inputRight.addEventListener("mouseleave", () => {
+    infoball.textContent = "";
+  });
+
   operation.addEventListener("mouseover", () => {
     infoball.textContent = "Selectionner un opérateur";
+  });
+
+  operation.addEventListener("mouseleave", () => {
+    infoball.textContent = "";
   });
